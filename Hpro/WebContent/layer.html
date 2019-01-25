@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->          
+        </div>        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <h4 class="form-signin-heading">Please sign in</h4>
+          <form class="form-signin" id="LoginCheck" action="../Member/MemberProc.han">            
+            <label for="UID" class="sr-only">id</label>
+            <input type="text"  name ="UId" id="UId" class="form-control" placeholder="ID" required autofocus>
+            <label for="inputPassword" name ="Upassword"  class="sr-only">Password</label>
+            <input type="password" name="UPassword" id="UPassword" class="form-control" placeholder="Password" required>
+            <input type="hidden" value="">                        
+            <button class="btn btn-lg btn-primary btn-block" id="btnLogin" type="submit">로그인</button>
+          </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+        <button type="button" id="btnJoin" class="btn btn-primary">회원가입</button>          
+        </div>
+</body>
+</html>
